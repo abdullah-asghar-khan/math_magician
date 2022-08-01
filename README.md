@@ -10,8 +10,8 @@
                              
 ## Built With ✔️
 
-- React 🔥
-- CSS 😋
+- React 
+- CSS 
 
 ## Functionalites 😄
  
