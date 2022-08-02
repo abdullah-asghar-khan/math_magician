@@ -27,6 +27,15 @@
   font-size: 0.85rem;
   border: 0.5px solid rgb(195, 192, 192);
   font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.calculator-digits input:hover {
+  border: 0.5px solid rgb(46, 45, 45);
+}
+
+.calculator-digits input:focus {
+  border: 0.5px solid rgb(46, 45, 45);
 }
 
 .zero {

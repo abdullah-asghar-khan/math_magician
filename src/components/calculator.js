@@ -1,41 +1,87 @@
 import React from 'react';
+import calculate from './logic/calculate';
 
 export default class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      first: true,
+      total: '',
+      next: '',
+      operation: '',
     };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick = (e) => {
+    const buttonName = e.target.name;
+    this.setState((prevState) => ({
+      ...calculate(prevState, buttonName),
+    }));
   }
 
   render() {
-    const { first } = this.state;
+    const { total, next, operation } = this.state;
     return (
       <div className="calculator-container">
         <div className="cal-screen">
-          <span>0</span>
+          <span>{ next || operation || total || ''}</span>
         </div>
         <form className="calculator-digits" name="calculator">
-          {first}
-          <input type="button" value="AC" />
-          <input type="button" value="+/-" />
-          <input type="button" value="%" />
-          <input type="button" value={'\u00f7'} className="peach-color divide" />
-          <input type="button" value="7" />
-          <input type="button" value="8" />
-          <input type="button" value="9" />
-          <input type="button" value={'\u00D7'} className="peach-color" />
-          <input type="button" value="4" />
-          <input type="button" value="5" />
-          <input type="button" value="6" />
-          <input type="button" value={'\u2212'} className="peach-color" />
-          <input type="button" value="3" />
-          <input type="button" value="2" />
-          <input type="button" value="1" />
-          <input type="button" value={'\u1429'} className="peach-color" />
-          <input type="button" value="0" className="zero" />
-          <input type="button" value="." />
-          <input type="button" value={'\u003D'} className="peach-color" />
+          <input type="button" name="AC" value="AC" onClick={this.handleClick} />
+          <input type="button" name="+/-" value="+/-" onClick={this.handleClick} />
+          <input type="button" name="%" value="%" onClick={this.handleClick} />
+          <input
+            type="button"
+            name="÷"
+            value="÷"
+            className="peach-color divide"
+            onClick={this.handleClick}
+          />
+          <input type="button" name="7" value="7" onClick={this.handleClick} />
+          <input type="button" name="8" value="8" onClick={this.handleClick} />
+          <input type="button" name="9" value="9" onClick={this.handleClick} />
+          <input
+            type="button"
+            name="x"
+            value={'\u00D7'}
+            className="peach-color"
+            onClick={this.handleClick}
+          />
+          <input type="button" name="4" value="4" onClick={this.handleClick} />
+          <input type="button" name="5" value="5" onClick={this.handleClick} />
+          <input type="button" name="6" value="6" onClick={this.handleClick} />
+          <input
+            type="button"
+            name="-"
+            value={'\u2212'}
+            className="peach-color"
+            onClick={this.handleClick}
+          />
+          <input type="button" name="3" value="3" onClick={this.handleClick} />
+          <input type="button" name="2" value="2" onClick={this.handleClick} />
+          <input type="button" name="1" value="1" onClick={this.handleClick} />
+          <input
+            type="button"
+            name="+"
+            value={'\u1429'}
+            className="peach-color"
+            onClick={this.handleClick}
+          />
+          <input
+            type="button"
+            name="0"
+            value="0"
+            className="zero"
+            onClick={this.handleClick}
+          />
+          <input type="button" name="." value="." onClick={this.handleClick} />
+          <input
+            type="button"
+            name="="
+            value={'\u003D'}
+            className="peach-color"
+            onClick={this.handleClick}
+          />
         </form>
       </div>
     );
