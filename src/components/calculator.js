@@ -27,7 +27,16 @@ export default class Calculator extends React.Component {
         <span>{ next || operation || total || ''}</span>
         </div>
         <form className="calculator-digits" name="calculator">
-          
+        <input type="button" name="AC" value="AC" onClick={this.handleClick} />
+          <input type="button" name="+/-" value="+/-" onClick={this.handleClick} />
+          <input type="button" name="%" value="%" onClick={this.handleClick} />
+          <input
+            type="button"
+            name="÷"
+            value="÷"
+            className="peach-color divide"
+            onClick={this.handleClick}
+          />
         </form>
       </div>
     );
