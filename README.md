@@ -17,11 +17,6 @@
 - GitFlow
 - Webpack
 
-[Live Demo Link](https://livedemo.com)
-## Live Demo
-
-[Live Demo Link coming soon...](#)
-
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
