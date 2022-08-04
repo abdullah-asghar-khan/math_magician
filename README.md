@@ -1,6 +1,6 @@
 # REACT Project - Math Magicians
-
-> "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: make simple calculations and read math-related quotes.
+ "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: make simple calculations and read math-related quotes.
+ 
 ## Built With
 
 - Major languages
@@ -17,44 +17,27 @@
 - GitFlow
 - Webpack
 
-[Live Demo Link](https://livedemo.com)
-## Live Demo
-
-[Live Demo Link coming soon...](#)
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
+# Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-Create a repo then clone it and open into Visual Studio Code
+`gh repo clone Abdullah2213565/math_magician`
 
 ### Setup
 
-- Download and install npm
-- Command line / Git bash
+Dowload NPM and NODE
 
 ### Install
 
-### Usage
-- Visual Studio Code
-- `npm install`
-- `npm run build`
-- `npm start`
+Install the packages globally and after that:
+
+`npm install`
 
 ### Run tests
 
-### Deployment
-- `npx stylelint "**/*.scss"`
-- `npx eslint .`
-
-### Deployment
-
-Deploy onto the web using GitHub Pages
+`npx hint .`
+`npx stylelint "**/*.scss"`
+`npx eslint .`
 
 ## Contributors
 
@@ -62,10 +45,11 @@ Deploy onto the web using GitHub Pages
 - GitHub: [@githubhandle](https://github.com/Abdullah2213565)
 - Twitter: [@twitterhandle](https://twitter.com/dulakhan024)
 
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Abdullah2213565/math_magician/issues/5)
 
 ## Show your support
 
