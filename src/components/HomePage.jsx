@@ -8,17 +8,10 @@ const HomePage = () => (
       Natus et, ad at eum quam omnis, laboriosam sed possimus facere
       temporibus impedit labore voluptatibus tenetur fugiat vero aperiam
       eligendi, maiores dolores!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Natus et, ad at eum quam omnis, laboriosam sed possimus facere
-      temporibus impedit labore voluptatibus tenetur fugiat vero aperiam
-      eligendi, maiores dolores!
     </p>
     <br />
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Natus et, ad at eum quam omnis, laboriosam sed possimus facere
-      temporibus impedit labore voluptatibus tenetur fugiat vero aperiam
-      eligendi, maiores dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit.
       Natus et, ad at eum quam omnis, laboriosam sed possimus facere
       temporibus impedit labore voluptatibus tenetur fugiat vero aperiam
       eligendi, maiores dolores!
