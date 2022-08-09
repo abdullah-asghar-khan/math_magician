@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --faintCyan: rgb(236, 252, 247);
+  --dimeGray: #4d4c4c;
+  --peach: rgb(248, 146, 57);
+}
+
 .calculator-container {
-  width: 20rem;
-  margin: 2rem auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .cal-screen {
@@ -43,9 +55,120 @@
 }
 
 .peach-color {
-  background-color: rgb(248, 146, 57);
+  background-color: salmon;
 }
 
 .divide {
   border-top: none;
+}
+
+.navbar {
+  height: 4rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 5px 0 #4d4c4c;
+  color: #4d4c4c;
+  font-family: 'Poppins', sans-serif;
+  z-index: 1;
+  background-color: var(--faintCyan);
+  position: relative;
+}
+
+.navbar > h1 {
+  position: relative;
+}
+
+.navbar > h1::after {
+  content: '';
+  height: 7px;
+  width: 60px;
+  background-color: aquamarine;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.link {
+  padding: 0 0 0 1rem;
+  text-decoration: none;
+  color: #4d4c4c;
+}
+
+.link:hover {
+  color: var(--peach);
+}
+
+.link:focus {
+  color: var(--peach);
+}
+
+.mobile-menu {
+  background-color: var(--faintCyan);
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.home-page,
+.calc-page,
+.quotes-page {
+  padding: 2rem 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.quotes-page {
+  color: var(--dimeGray);
+}
+
+.home-page > p {
+  color: #4d4c4c;
+}
+
+.calc-page {
+  text-align: center;
+}
+
+@media screen and (min-width: 474px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .navbar {
+    height: 4rem;
+    padding: 1rem 2rem;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  .home-page,
+  .calc-page,
+  .quotes-page {
+    padding: 2rem 2rem;
+  }
+
+  .quotes-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 7rem 0;
+  }
+
+  .calc-page {
+    display: flex;
+  }
+
+  .calculator-container {
+    width: 30rem;
+    margin: 0 auto;
+  }
+
+  .calculator-digits input {
+    height: 3.8rem;
+    font-size: 1rem;
+  }
 }
