@@ -5,4 +5,4 @@ import CalculatorPage from '../CalculatorPage';
 test('test id Calculator page is rendered', () => {
   const CalcPage = renderer.create(<CalculatorPage />).toJSON();
   expect(CalcPage).toMatchSnapshot();
-})
+});
