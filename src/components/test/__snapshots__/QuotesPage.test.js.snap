@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the quote component Quotes is rendered 1`] = `
+<div
+  className="quotes-page"
+>
+  <h3>
+    Without mathematics, there’s nothing you can do.
+    <br />
+    Everything around you is mathematics. Albert Einstein
+  </h3>
+</div>
+`;
